@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Argentavis",
+    "price": 5,
+    "category": "voladores",
+    "description": "ave gigante ideal para transporte aéreo eficiente",
+    "imageUrl": "/images/argentavis.png"
+  },
+  {
+    "id": "2",
+    "name": "Pyromane",
+    "price": 10,
+    "category": "terrestres",
+    "description": "criatura ígnea poderosa con ataques de fuego devastadores",
+    "imageUrl": "/images/pyromane.png"
+  },
+  {
+    "id": "3",
+    "name": "Basilosaurio",
+    "category": "acuaticos",
+    "price": 10,
+    "description": "mamífero marino resistente y veloz bajo el agua",
+    "imageUrl": "/images/basilosaurus.png"
+  },
+  {
+    "id": "4",
+    "name": "Dreadmare",
+    "category": "voladores",
+    "price": 10,
+    "description": "criatura mitologica agil al vuelo",
+    "imageUrl": "/images/dreadmare.png"
+  },
+  {
+    "id": "5",
+    "name": "Ankylosaurus",
+    "category": "terrestres",
+    "price": 5,
+    "description": "el terror de las montañas",
+    "imageUrl": "/images/ankylosaurus.png"
+  },
+  {
+    "id": "6",
+    "name": "Megalodon",
+    "category": "acuaticos",
+    "price": 5,
+    "description": "gran depredador de los mares",
+    "imageUrl": "/images/megalodon.png"
+  }
+
+
+]

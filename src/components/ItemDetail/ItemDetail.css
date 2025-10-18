@@ -1,0 +1,71 @@
+.item-detail {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 1px solid #333;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-detail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.9);
+}
+
+.item-detail img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background-color: #2a2a2a;
+  padding: 0.5rem;
+}
+
+.item-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.item-detail-info h2 {
+  font-size: 1.8rem;
+  color: #ffcc66;
+  margin-bottom: 1rem;
+}
+
+.item-detail-info p {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Botón de agregar al carrito */
+.item-detail button {
+  align-self: flex-start;
+  background-color: #ffcc66;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.item-detail button:hover {
+  background-color: #ffd98c;
+  transform: scale(1.05);
+}
+
+.item-detail button:active {
+  background-color: #e6b84c;
+  transform: scale(0.97);
+}
