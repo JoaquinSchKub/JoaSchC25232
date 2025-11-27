@@ -1,12 +1,12 @@
 
-export const validateProducts = (product, filedRequired = true) => {
+export const validateProduct = (product, fileRequired = true) => {
     const errors = {};
 
-    if (product.name.trim()) {
+    if (!product.name.trim()) {
         errors.name = "El nombre es obligatorio";
     }
     
-    if(product.price || product.price === 0 ){
+    if(!product.price || product.price <= 0 ){
         errors.price = "El precio es obligatorio";
     }
 
@@ -18,7 +18,7 @@ export const validateProducts = (product, filedRequired = true) => {
         errors.category = "La categoría es obligatoria";
     }
 
-    if (filedRequired && !product.image.trim()){
+    if (fileRequired && !product.file){
         errors.image = "La imagen es obligatoria";
     }
 

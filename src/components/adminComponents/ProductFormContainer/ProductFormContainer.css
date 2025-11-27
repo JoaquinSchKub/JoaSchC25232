@@ -1,0 +1,51 @@
+.btn:hover {
+    background: #79b6ff;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (min-width: 640px){
+    .product-form .row-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Basic form styles to ensure CSS is visibly applied */
+.product-form{
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    background: #fff;
+}
+.product-form label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.product-form .btn{
+    padding: 0.5rem 1rem;
+    background: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
