@@ -1,65 +1,42 @@
-
-nav{
-    width: 100%;
+/* ===== NAVBAR GENERAL ===== */
+nav {
+  background-color: transparent;
 }
 
 .nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0.75rem 0;
-    margin: 0;
-    gap: 2rem;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease, transform 0.2s ease;
-    position: relative;
-}
-
-.nav-item a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #ffcc66;
-  transition: width 0.3s ease;
-}
-
-.nav-item a:hover {
-  color: #ffcc66;
-  transform: translateY(-2px);
-}
-
-.nav-item a:hover::after {
-  width: 100%;
-}
-
-.in-cart {
-  background-color: #ffcc66;
-  color: #1e1e1e;
-  font-size: 0.8rem;
-  font-weight: bold;
-  border-radius: 50%;
-  padding: 0.3em 0.55em;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 20px;
-  min-height: 20px;
-  margin-left: 0.4rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.in-cart:hover {
-  transform: scale(1.1);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+/* ===== ITEMS ===== */
+.nav-item a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* Hover con acento violeta */
+.nav-item a:hover {
+  background-color: #6d28d9;
+  color: white;
+}
+
+/* ===== BADGE DEL CARRITO ===== */
+.in-cart {
+  background-color: gold; /* Botón dorado */
+  color: #1c1c1c;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-left: 6px;
+  font-size: 0.9rem;
+  border: 2px solid #6d28d9; /* Acento violeta */
 }

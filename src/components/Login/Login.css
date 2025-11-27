@@ -1,0 +1,86 @@
+/* ============================= */
+/*            LOGIN              */
+/* ============================= */
+
+form {
+  background: #1a1a1a;
+  padding: 30px;
+  margin: 60px auto;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+
+  border: 2px solid #6d28d9; /* violeta */
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título */
+form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #c084fc; /* violeta claro */
+  text-shadow: 0 0 6px rgba(192, 132, 252, 0.7);
+}
+
+/* Contenedor de inputs */
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Labels */
+form label {
+  font-size: 1rem;
+  color: #9f9f9f;
+}
+
+/* Inputs */
+form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #6d28d9;
+  background-color: #121212;
+  color: #e5e5e5;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+/* Efecto focus */
+form input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+/* Botón */
+form button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #a855f7;
+  color: #1a1a1a;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover del botón */
+form button:hover {
+  background: #c5a100;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  form {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+}
